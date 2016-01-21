@@ -87,6 +87,16 @@ sub abbrev {
 
 1;
 
+=head1 REPOSITORY
+
+C<Text::Abbrev> is a core module -
+it has always been shipped with Perl 5.
+
+It is a dual-life module though,
+which means it also gets separate CPAN releases. 
+
+The repository for the CPAN releases: L<https://github.com/rafl/text-abbrev>
+
 =head1 LICENSE
 
 This program is free software;
