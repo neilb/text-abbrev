@@ -22,11 +22,38 @@ Text::Abbrev - create an abbreviation table from a list (e.g. of words)
 
 =head1 DESCRIPTION
 
-Stores all unambiguous truncations of each element of LIST
-as keys in the associative array referenced by C<$hashref>.
-The values are the original list elements.
+This module exports an C<abbrev> function that generates
+all unambiguous truncations of each string in a list of strings.
+Each truncation is returned as the key of a hash,
+with the value being the original string.
+
+For example, if you called the following:
+
+    %hash = abbrev qw(blue blood);
+
+You would get the following entries in C<%hash>:
+
+    blu   => blue
+    blue  => blue
+    blo   => blood
+    bloo  => blood
+    blood => blood
+
+Whereas if you called it with the list C<(red blood)>,
+you'd get the following:
+
+    r     => red
+    re    => red
+    red   => red
+    b     => blood
+    bl    => blood
+    blo   => blood
+    bloo  => blood
+    blood => blood
 
 =head1 EXAMPLE
+
+These illustrate the different ways you can call the C<abbrev> function:
 
     $hashref = abbrev qw(list edit send abort gripe);
 

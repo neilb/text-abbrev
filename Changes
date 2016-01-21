@@ -7,6 +7,7 @@ Revision history for Perl module Text::Abbrev
   * Added use of strict and warnings, bumping min perl version to 5.006.
   * Added a LICENSE section to pod, with the text for Perl_5 license
   * Added github repo to the doc, and noted that it's a core module.
+  * Added some example expansions to the doc, to show what's going on
 
 1.02 2012-09-11 FLORA
   * Fix NAME section.
