@@ -5,6 +5,7 @@ Revision history for Perl module Text::Abbrev
   * Removed the name of the exported function (abbrev) from the NAME section.
     By convention the abstract is: <module-name> - <short description>
   * Added use of strict and warnings, bumping min perl version to 5.006.
+  * Added a LICENSE section to pod, with the text for Perl_5 license
 
 1.02 2012-09-11 FLORA
   * Fix NAME section.
