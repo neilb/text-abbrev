@@ -1,8 +1,14 @@
 package Text::Abbrev;
-require 5.005;		# Probably works on earlier versions too.
+
+use 5.006;
+use strict;
+use warnings;
+
 require Exporter;
 
 our $VERSION = '1.03';
+our @ISA     = qw(Exporter);
+our @EXPORT  = qw(abbrev);
 
 =head1 NAME
 
@@ -32,8 +38,6 @@ The values are the original list elements.
 
 =cut
 
-@ISA = qw(Exporter);
-@EXPORT = qw(abbrev);
 
 # Usage:
 #	abbrev \%foo, LIST;
