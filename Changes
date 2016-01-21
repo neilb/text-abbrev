@@ -1,6 +1,6 @@
 Revision history for Perl module Text::Abbrev
 
-1.03 2016-01-?? FLORA
+1.02_01 2016-01-?? FLORA
   * Tweaked format of this file to follow CPAN::Changes::Spec
   * Removed the name of the exported function (abbrev) from the NAME section.
     By convention the abstract is: <module-name> - <short description>

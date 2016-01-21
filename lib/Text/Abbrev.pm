@@ -6,7 +6,6 @@ use warnings;
 
 require Exporter;
 
-our $VERSION = '1.03';
 our @ISA     = qw(Exporter);
 our @EXPORT  = qw(abbrev);
 
